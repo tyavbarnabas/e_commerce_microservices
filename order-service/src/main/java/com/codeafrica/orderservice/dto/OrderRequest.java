@@ -3,6 +3,7 @@ package com.codeafrica.orderservice.dto;
 import com.codeafrica.orderservice.model.OrderLineItems;
 import lombok.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
@@ -11,6 +12,6 @@ import java.util.List;
 @Setter
 public class OrderRequest {
 
-    private List<OrderLineItemsDto>orderLineItemsDtoList;
+    private List<OrderLineItemsDto> orderLineItemsDtoList = new ArrayList<>();
 
 }
